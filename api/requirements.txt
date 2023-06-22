@@ -1,6 +1,6 @@
 flask
 flask-cors
-hashlib
 pytest
 coverage
 waitress
+hashlib

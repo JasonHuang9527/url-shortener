@@ -1,0 +1,14 @@
+api/venv/
+
+*.pyc
+api/__pycache__/
+
+api/instance/
+
+api/.pytest_cache/
+api/.coverage
+api/htmlcov/
+
+api/dist/
+api/build/
+*.egg-info/
