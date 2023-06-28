@@ -1,8 +1,8 @@
 DROP TABLE IF EXISTS urls;
 
 CREATE TABLE urls (
-    original_url TEXT PRIMARY KEY,
-    short_url TEXT NOT NULL,
-    created TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
-    CHECK (length(short_url) == 8)
+    original_url text NOT NULL,
+    short_url text NOT NULL CHECK (char_length(short_url) = 8),
+    created TIMESTAMP WITH TIME ZONE DEFAULT CURRENT_TIMESTAMP,
+    PRIMARY KEY (original_url)
 );

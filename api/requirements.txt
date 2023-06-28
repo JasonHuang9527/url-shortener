@@ -3,4 +3,4 @@ flask-cors
 pytest
 coverage
 waitress
-hashlib
+psycopg2-binary
